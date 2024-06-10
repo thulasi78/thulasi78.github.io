@@ -1,0 +1,388 @@
+/*total*/
+  body{
+    background-color: black;
+    color: white;
+    scroll-behavior: smooth;
+ }
+/*navbar*/
+header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width:100%;
+  padding: 1px 1px;
+  background-color:deeppink;
+  height: 50px;
+  justify-content: space-between;
+  z-index: 1000;
+  align-items: center;
+  display: flex;
+}
+#logo{
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+  font-weight:bold;
+  margin-left: 70px;
+  margin-top: -10px;
+  line-height:40px;
+}
+#navbar{
+  display: flex;
+  align-items: center;
+  margin-top:-25px;
+  text-align-last: right;
+  word-spacing: 30px;
+  margin-left: 20px;
+flex: 1;
+justify-content: flex-end;
+margin: 10px 0;
+
+}
+ header nav a{
+  padding: 0 10px;
+  text-decoration: none;
+  color:white;
+word-spacing: 10px;
+line-height: 20px;
+font-size: larger;
+font-weight: bold;
+transition: .3s;
+}
+ header nav a:hover,
+ header nav a:active{
+  color:black;
+  cursor: pointer;
+}
+.burger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+.burger div {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 5px;
+}
+#hamburger {
+  display: none;
+  font-size: 30px;
+  color: white;
+  background: none;
+  border: none;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  #navbar {
+      display: none;
+      flex-direction: column;
+      background-color: deeppink;
+      position: absolute;
+      top: 50px;
+      right: 0;
+      width: 100%;
+  }
+
+  #navbar a {
+      margin: 10px 0;
+      text-align: center;
+  }
+
+  #hamburger {
+      display: block;
+  }
+}
+@media only screen and(max-width:800px){
+  /*for tablets:*/
+  #navbar,#About,#Education,#Home,#Contact,#skills{
+    width:80%;
+padding:0;
+width:100%;
+  }
+}
+@media only screen and (max-width:500px){
+  /*for mobile phones*/
+  section{
+    width: 100%;
+  }
+}
+/*home section*/
+#section{
+  margin-top:100px;
+}
+#Home{
+  height: 100vh;
+  width: 100vw;
+}
+#heading{
+text-align: left;
+margin-left: 200px;
+line-height: normal;
+font-size:40px;
+}
+#one{
+color:deeppink;
+text-align: left;
+margin-left: 200px;
+font-size:40px;
+}
+#profile{
+margin-top:-300px;
+margin-left: 800px;
+height: 300px;
+width: 300px;
+border-radius: 150px;
+}
+/*about section*/
+#About{
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+}
+#prof{
+height: 300px;
+width: 300px;
+margin-left:90px ;
+border-radius:150px ;
+margin-top:100px ;
+}
+#let{
+margin-left:500px ;
+margin-top:-300px ;
+word-spacing: 20px;
+}
+#intro{
+margin-left:500px ;
+letter-spacing:10px ;
+}
+#me{
+margin-left:500px ;
+letter-spacing:10px ;
+}
+#data{
+  max-width: 600px;
+  margin-bottom: 10px;
+margin-left:500px ;
+}
+#datab{
+  max-width: 600px;
+  margin-bottom: 10px;
+margin-left:500px ;
+}
+#datac{
+  max-width: 600px;
+  margin-bottom: 10px;
+margin-left:500px;
+}
+#resume{ 
+text-align: left;
+margin-left: 700px;
+border-radius: 10px;
+height: 30px;
+width: 130px;
+background-color:deeppink;
+border-width: 2px;
+color: white;
+}
+/* education section*/
+#Education{
+  height: 100vh;
+  width: 100vw;
+}
+#tab1{
+background-color: gray;
+border-color: white;
+border-radius: 10px;
+border-width: 5px;
+width: 250px;
+height:100px;
+text-align: center;
+margin-top: 50px;
+}
+#tab2{
+background-color: gray;
+border-color: white;
+border-radius: 10px;
+width: 250px;
+height:100px;
+text-align: center;
+margin-top: 20px;
+}
+#tab3{
+background-color: gray;
+border-color: white;
+border-radius: 10px;
+width: 250px;
+height:100px;
+text-align: center;
+margin-top: 20px;
+}
+#tab4{
+background-color: gray;
+border-color: white;
+border-radius: 10px;
+width: 250px;
+height:100px;
+text-align: center;
+margin-top: 20px;
+}
+#tab{
+background-color: deeppink;
+border-radius: 10px;
+}
+#taba{
+background-color: deeppink;
+border-radius: 10px;
+height: 50px;
+}
+/*skills section*/
+#Skills{
+  height: 100vh;
+  width: 100vw;
+  margin-top:200px;
+}
+#front{
+background-color:deeppink;
+line-height: 30px;
+border-radius: 20px;
+margin-left:400px ;
+margin-right:400px ;
+margin-top:5px;
+height:30px;
+}
+#back{
+background-color: gray;
+line-height:2px;
+border-radius: 20px;
+margin-left:400px ;
+margin-right:400px ;
+height: 30px;
+margin-top:5px;
+}
+#html{
+height:30px ;
+width:30px ;
+border-radius:10px ;
+margin-right: 20px;
+}
+#css{
+height:30px ;
+width:30px ;
+border-radius:10px ;
+margin-right: 40px;
+}
+#js{
+height:30px ;
+width:30px ;
+border-radius:10px ;
+margin-right: 10px;
+}
+#react{
+height:30px ;
+width:30px ;
+border-radius:10px ;
+margin-right: 20px;
+}
+#node{
+height:30px ;
+width:30px ;
+border-radius:10px ;
+margin-right: 25px;
+}
+#sql{
+height:30px ;
+width:30px ;
+border-radius:10px ;
+margin-right: 45px;
+}
+#java{
+height:30px ;
+width:30px ;
+border-radius:10px ;
+margin-right: 25px;
+}
+#python{
+  height:30px ;
+width:30px ;
+border-radius:10px ;
+margin-right: 25px;
+}
+/*contact section*/
+#Contact{
+  height: 150vh;
+  width: 100vw;
+}
+#source{
+  margin-top:-10px;
+}
+#email{
+height:90px ;
+width:90px ;
+margin-left: 90px;
+border-radius: 50px;
+}
+#phone{
+height:65px ;
+width:65px ;
+margin-left: 100px;
+margin-top: 70px;
+border-radius: 10px;
+}
+#linkedin{
+height:80px ;
+width:80px ;
+margin-left: 100px;
+margin-top: 80px;
+border-radius: 20px;
+}
+#lastone{
+margin-left:200px;
+margin-top:-360px ;
+
+}
+#lasttwo{
+margin-left:250px;
+margin-top:125px ;
+
+}
+#last{
+text-decoration:none;
+margin-left:250px;
+line-height: 250px;
+color: white;
+
+}
+#inputext{
+margin-left:600px;
+line-height: 30px;
+width: 400px;
+}
+#inputemail{
+margin-left:600px;
+line-height: 30px;
+width: 400px;
+}
+#area{
+margin-left:600px;
+
+}
+#merge{
+margin-top:-440px;
+}
+#sub{
+background-color:deeppink;
+border-radius: 5px;
+width: 70px;
+height: 30px;
+margin-left:770px ;
+color: white;
+}

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> MY PORTIFOLIO WEBSITE</title>
+    <link rel="stylesheet" href="stylesheet.css">
+   
+<body>
+    <!--navbar-->
+    <header>
+        <a href="#" id="logo">TE</a>
+    <nav id="navbar">
+        <a href="#" >Home</a>
+        <a href="#About"> About</a>
+        <a href="#Education">Education</a>
+        <a href="#Skills">Skills</a>
+        <a href="#Contact">Contact</a>
+    </nav>
+    <div class="burger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+    </div>
+    <button id="hamburger" onclick="toggleMenu()">☰</button>
+</header>
+    <!--home section-->
+    <section id="Home">
+        <div id="section">
+    <h2 id="heading"> Hi</h2>
+    <h2 id="heading">I am </h2>
+<h1 id="one">Thulasi Etthireddy</h1>
+<h2 id="heading">A Web Devoloper</h2>
+<p><img src="./public/51e0ae0a413f4344a62d09615238e23e.webp" id="profile"></p>
+</div></section>
+<!--about section-->
+<section id="About">
+<div>
+<img src="./public/webpage.jpg" id="prof">
+<h1 id="let"> LET ME</h1>
+<h1 id="intro">INTRODUCE</h1>
+<h1 id="me">MYSELF</h1>
+<p id="data">Hello! I'm Thulasi, a passionate and dedicated professional with a strong background in Microbiology, Botany, and Chemistry, complemented by extensive training in Java Full Stack Development and Python. My academic journey, which includes a Bachelor's degree from DK Government College for Women (A) and specialized courses from Sky Bound IT Solutions and Codefobe, has equipped me with a unique blend of skills that I bring to the IT industry.</p>
+
+   <p id="datab"> I thrive in dynamic environments and am eager to leverage my expertise to excel as a senior web developer. With a solid foundation in software development and a commitment to continuous learning, I am excited about the opportunities that lie ahead in advancing my career and contributing to innovative projects.</p>
+    
+   <p id="datac"> Join me as I embark on this journey of growth and exploration in the world of technology.</p>
+   <button id="resume" onclick="location.href='Thulasi Etthireddy Resume.docx'">Download resume</button>
+</div>
+</section>
+<!--Education section-->
+<section id="Education">
+<center><h2>EDUCATION</h2></center>
+<center>
+<table id="tab1">
+    <th id="taba">Java Full Stack Devolopment Course</th>
+    <tr>
+    <td>Sep 2023-Apr 2024</td>
+</tr>
+</table>
+<table id="tab2">
+    <th id="tab">Bachelor Of Sciences</th>
+    <tr>
+    <td>D.K Govt College For Women(A)</td></tr>
+    <tr><td>2019-2022</td></tr>
+</table>
+<table id="tab3">
+    <th id="tab">Higher Secondary Education</th>
+    <tr>
+    <td>T.M.R Junior College</td></tr>
+    <tr><td>2017-2019</td></tr>
+</table>
+<table id="tab4">
+    <th id="tab">Secondary Education</th>
+    <tr><td>T.M.R High School</td></tr>
+    <tr><td>2016-2017</td></tr>
+</table>
+</center>
+</section>
+          <!--skills section-->
+          <section id="Skills">
+          <center>
+            <h2>SKILLS</h2>
+            <div>
+        <h3 id="front">FRONT-END</h3>
+        <h4 id="back"><img src="./public/html1.png" id="html">HTML</h4>
+        <h4 id="back"><img src="./public/css1.png"  id="css">CSS</h4>
+        <h4 id="back"><img src="./public/js2.png" id="js">JavaScript</h4>
+        <h4 id="back"><img src="./public/reactjs1.png" id="react">React Js</h4>
+        <h3 id="front">BACK-END</h3>
+        <h4 id="back"><img src="./public/node2.png"  id="node">Node Js</h4>
+        <h4 id="back"><img src="./public/sql1.webp"  id="sql">SQL</h4>
+        <h4 id="back"><img src="./public/java1.png"  id="java">Java</h4>
+        <h3 id="front">OTHER</h3>
+        <h4 id="back"><img src="./public/python1.png"  id="python">Python</h4>
+</div>
+</section>
+            <!--contact section-->
+            <section id="Contact">
+                <div id="source"></div>  
+            <center><H1>Contact Me</H1></center>
+    <img src="./public/email.jpg" id="email"><br>
+    <img src="./public/download.png" id="phone"><br>
+    <img src="./public/linkedin2.png" id="linkedin"><br>
+    <h3 id="lastone">Thulasiethireddy@gmail.com</h3>
+    <h3 id="lasttwo">+91 8688935593</h3>
+    <a href="https://www.linkedin.com/in/thulasi-etthireddy-a6240a252?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" id="last">Visit profile</a><br>
+    </div>
+    <div id="merge">
+    <input type="text" placeholder="Your Name" id="inputext"  name="name"><br><br>
+    <input type="email" placeholder="Your Email" id="inputemail"  name="email"><br><br>
+    <textarea cols="53" rows="10" placeholder="Your Message" name="Message" id="area"></textarea><br><br>
+    <button type="submit" id="sub"  onclick="sendMail()">Submit</button>
+</div>
+</section>
+<script type="text/javascript"
+src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+(function(){
+emailjs.init({
+publicKey: "h6yp4HLKH0oST7fHm",
+});  
+ })();
+</script>
+<script>
+    function toggleMenu() {
+    const navbar = document.getElementById('navbar');
+    if (navbar.style.display === 'flex') {
+        navbar.style.display = 'none';
+    } else {
+        navbar.style.display = 'flex';
+    }
+}
+</script>
+<script src="script1.js"></script>
+<script src="script.js"></script>
+</head>
+</body>
+</html>
