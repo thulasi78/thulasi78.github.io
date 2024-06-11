@@ -1,59 +1,64 @@
 /*total*/
-  body{
-    background-color: black;
-    color: white;
-    scroll-behavior: smooth;
- }
-/*navbar*/
-header{
+  /* total */
+body {
+  background-color: black;
+  color: white;
+  scroll-behavior: smooth;
+}
+
+/* navbar */
+header {
   position: fixed;
   top: 0;
   left: 0;
-  width:100%;
+  width: 100%;
   padding: 1px 1px;
-  background-color:deeppink;
+  background-color: deeppink;
   height: 50px;
   justify-content: space-between;
   z-index: 1000;
   align-items: center;
   display: flex;
 }
-#logo{
+
+#logo {
   font-size: 20px;
   color: white;
   text-decoration: none;
-  font-weight:bold;
+  font-weight: bold;
   margin-left: 70px;
   margin-top: -10px;
-  line-height:40px;
+  line-height: 40px;
 }
-#navbar{
+
+#navbar {
   display: flex;
   align-items: center;
-  margin-top:-25px;
+  margin-top: -25px;
   text-align-last: right;
   word-spacing: 30px;
-  margin-left: 20px;
-flex: 1;
-justify-content: flex-end;
-margin: 10px 0;
-
+  margin-left: auto; /* updated */
+  justify-content: flex-end;
+  margin: 10px 20px 10px 0; /* updated */
 }
- header nav a{
+
+header nav a {
   padding: 0 10px;
   text-decoration: none;
-  color:white;
-word-spacing: 10px;
-line-height: 20px;
-font-size: larger;
-font-weight: bold;
-transition: .3s;
+  color: white;
+  word-spacing: 10px;
+  line-height: 20px;
+  font-size: larger;
+  font-weight: bold;
+  transition: .3s;
 }
- header nav a:hover,
- header nav a:active{
-  color:black;
+
+header nav a:hover,
+header nav a:active {
+  color: black;
   cursor: pointer;
 }
+
 .burger {
   display: none;
   flex-direction: column;
@@ -67,6 +72,7 @@ transition: .3s;
   background-color: white;
   margin: 5px;
 }
+
 #hamburger {
   display: none;
   font-size: 30px;
@@ -77,6 +83,28 @@ transition: .3s;
   cursor: pointer;
 }
 
+@media (max-width: 768px) {
+  #navbar {
+    display: none;
+    flex-direction: column;
+    background-color: deeppink;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    width: 100%;
+  }
+
+  #navbar a {
+    margin: 10px 0;
+    text-align: center;
+  }
+
+  #hamburger {
+    display: block;
+  }
+}
+
+/* rest of the CSS remains unchanged */
 @media (max-width: 768px) {
   #navbar {
       display: none;
@@ -112,31 +140,37 @@ width:100%;
   }
 }
 /*home section*/
-#section{
-  margin-top:100px;
-}
-#Home{
+#Home {
   height: 100vh;
   width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-#heading{
-text-align: left;
-margin-left: 200px;
-line-height: normal;
-font-size:40px;
+
+.section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-right: 180px; /* Space between the text and the profile image */
 }
-#one{
-color:deeppink;
-text-align: left;
-margin-left: 200px;
-font-size:40px;
+
+.heading, #one {
+  text-align: left;
+  line-height: normal;
+  font-size: 40px;
+  margin: 0;
 }
-#profile{
-margin-top:-300px;
-margin-left: 800px;
-height: 300px;
-width: 300px;
-border-radius: 150px;
+
+#one {
+  color: deeppink;
+  margin-top: 20px; /* Space between heading and one */
+}
+
+#profile {
+  height: 300px;
+  width: 300px;
+  border-radius: 50%; /* Ensures the image is circular */
 }
 /*about section*/
 #About{
