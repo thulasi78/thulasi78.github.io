@@ -416,3 +416,48 @@ height: 30px;
 margin-left:770px ;
 color: white;
 }
+@media (max-width: 800px) {
+  #navbar, #About, #Education, #Home, #Contact, #Skills {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+@media (max-width: 500px) {
+  section {
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  section#About {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: left;
+  }
+
+  section#About img#prof {
+    margin-right: 40px;
+    margin-bottom: 0;
+  }
+
+  section#About .text-content {
+    max-width: 600px;
+  }
+}
+
+@media (min-width: 600px) {
+  section#About {
+    padding: 40px;
+  }
+
+  section#About img#prof {
+    width: 200px;
+    height: 200px;
+  }
+
+  button#resume {
+    font-size: 18px;
+  }
+}
