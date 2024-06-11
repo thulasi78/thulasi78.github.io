@@ -177,7 +177,7 @@ margin-left: 450px;
 margin-top:-250px;
 }
 section#About {
-  height: 100vh;
+  height: 150vh;
   width: 100vw;
   display: flex;
   flex-direction: column;
@@ -191,7 +191,6 @@ section#About img#prof {
   border-radius: 50%;
   margin-bottom: 20px;
 }
-
 section#About h1 {
   margin: 5px 0;
 }
@@ -253,6 +252,7 @@ button#resume:hover {
 #Education{
   height: 100vh;
   width: 100vw;
+  text-align: center;
 }
 #tab1{
 background-color: gray;
