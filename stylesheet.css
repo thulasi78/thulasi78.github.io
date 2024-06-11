@@ -1,5 +1,4 @@
 /*total*/
-  /* total */
 body {
   background-color: black;
   color: white;
@@ -172,60 +171,83 @@ width:100%;
   width: 300px;
   border-radius: 50%; /* Ensures the image is circular */
 }
-/*about section*/
-#About{
+/* About section */
+.text-content{
+margin-left: 450px;
+margin-top:-250px;
+}
+section#About {
   height: 100vh;
   width: 100vw;
   display: flex;
-  align-items: center;
-  justify-content: center;
   flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+section#About img#prof {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
 
+section#About h1 {
+  margin: 5px 0;
 }
-#prof{
-height: 300px;
-width: 300px;
-margin-left:90px ;
-border-radius:150px ;
-margin-top:100px ;
-}
-#let{
-margin-left:500px ;
-margin-top:-300px ;
-word-spacing: 20px;
-}
-#intro{
-margin-left:500px ;
-letter-spacing:10px ;
-}
-#me{
-margin-left:500px ;
-letter-spacing:10px ;
-}
-#data{
+
+section#About p {
   max-width: 600px;
-  margin-bottom: 10px;
-margin-left:500px ;
+  margin: 10px 0;
+  line-height: 1.6;
 }
-#datab{
-  max-width: 600px;
-  margin-bottom: 10px;
-margin-left:500px ;
+
+button#resume {
+  background-color: #ff1493;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 20px;
 }
-#datac{
-  max-width: 600px;
-  margin-bottom: 10px;
-margin-left:500px;
+
+button#resume:hover {
+  background-color: #ff69b4;
 }
-#resume{ 
-text-align: left;
-margin-left: 700px;
-border-radius: 10px;
-height: 30px;
-width: 130px;
-background-color:deeppink;
-border-width: 2px;
-color: white;
+
+@media (min-width: 600px) {
+  section#About {
+      padding: 40px;
+  }
+
+  section#About img#prof {
+      width: 200px;
+      height: 200px;
+  }
+
+  button#resume {
+      font-size: 18px;
+  }
+}
+
+@media (min-width: 768px) {
+  section#About {
+      flex-direction: row;
+      align-items: flex-start; /* Align items to the start of the container */
+      justify-content: center;
+      text-align: left;
+  }
+
+  section#About img#prof {
+      margin-right: 40px;
+      margin-bottom: 0;
+  }
+
+  section#About .text-content {
+      max-width: 600px;
+  }
 }
 /* education section*/
 #Education{
@@ -278,77 +300,51 @@ background-color: deeppink;
 border-radius: 10px;
 height: 50px;
 }
-/*skills section*/
-#Skills{
-  height: 100vh;
+/* Skills section */
+#Skills {
+  height: auto;
   width: 100vw;
-  margin-top:200px;
+  margin-top: 20px;
+  padding: 20px;
 }
-#front{
-background-color:deeppink;
-line-height: 30px;
-border-radius: 20px;
-margin-left:400px ;
-margin-right:400px ;
-margin-top:5px;
-height:30px;
+.back {
+  line-height: 30px;
+  border-radius: 20px;
+  margin: 5px 0;
+  text-align: center;
+  background-color: gray;
+  width: 50%;
 }
-#back{
-background-color: gray;
-line-height:2px;
-border-radius: 20px;
-margin-left:400px ;
-margin-right:400px ;
-height: 30px;
-margin-top:5px;
+.front{
+  line-height: 30px;
+  border-radius: 20px;
+  margin: 5px 0;
+  text-align: center;
+  background-color: deeppink;
+  width: 50%;
 }
-#html{
-height:30px ;
-width:30px ;
-border-radius:10px ;
-margin-right: 20px;
+#html,
+#css,
+#js,
+#react,
+#node,
+#sql,
+#java,
+#python {
+  height: 30px;
+  width: 30px;
+  border-radius: 10px;
+  margin: 0 10px;
+  background-color: deeppink;
+  
 }
-#css{
-height:30px ;
-width:30px ;
-border-radius:10px ;
-margin-right: 40px;
-}
-#js{
-height:30px ;
-width:30px ;
-border-radius:10px ;
-margin-right: 10px;
-}
-#react{
-height:30px ;
-width:30px ;
-border-radius:10px ;
-margin-right: 20px;
-}
-#node{
-height:30px ;
-width:30px ;
-border-radius:10px ;
-margin-right: 25px;
-}
-#sql{
-height:30px ;
-width:30px ;
-border-radius:10px ;
-margin-right: 45px;
-}
-#java{
-height:30px ;
-width:30px ;
-border-radius:10px ;
-margin-right: 25px;
-}
-#python{
-  height:30px ;
-width:30px ;
-border-radius:10px ;
-margin-right: 25px;
+
+@media (max-width: 1024px) {
+  #prof {
+    height: 200px;
+    width: 200px;
+    border-radius: 100px;
+    }
 }
 /*contact section*/
 #Contact{
