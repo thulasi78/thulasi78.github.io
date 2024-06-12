@@ -158,9 +158,11 @@ width:100%;
   line-height: normal;
   font-size: 40px;
   margin: 0;
+  text-align:center;
 }
 
 #one {
+  text-align:center;
   color: deeppink;
   margin-top: 20px; /* Space between heading and one */
 }
