@@ -201,7 +201,7 @@ width:100%;
 }
 @media only screen and (min-width: 769px) {
   .section {
-    flex-direction: row; /* Use row direction for desktop and laptop view */
+    flex-direction: column; /* Use row direction for desktop and laptop view */
   }
 
   #profile {
