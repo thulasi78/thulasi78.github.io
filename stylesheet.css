@@ -137,41 +137,47 @@ width:100%;
 
 }
 /*home section*/
+
+
+
+
+
 #Home {
   height: 100vh;
   width: 100vw;
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column; /* Add this for mobile view */
 }
 
 .section {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /*margin-right: 180px;*/ 
-   justify-content: space-around;
-  align-items:center;
-  
+  text-align: center; /* Center text on mobile */
+  margin-right: 0; /* Remove margin for mobile view */
 }
 
 .heading, #one {
-  text-align: center;
   line-height: normal;
   font-size: 40px;
+  margin: 0;
 }
 
 #one {
   color: deeppink;
-  margin-top: 20px; 
+  margin-top: 20px; /* Space between heading and one */
 }
 
 #profile {
-  height: 300px;
-  width: 300px;
-  border-radius: 50%; 
-  justify-content: space-between;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%; /* Ensures the image is circular */
+  margin-top: 20px; /* Add space between text and image */
 }
+
+
 /* Media queries for mobile view */
 @media only screen and (max-width: 768px) {
   #Home {
