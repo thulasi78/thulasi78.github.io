@@ -143,20 +143,17 @@ width:100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  text-align: center; /* Center text alignment */
-  padding: 20px; /* Add padding to avoid text cutting off */
 }
 
 .section {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center; /* Center the content */
-  margin: 0;
+  margin-right: 180px; /* Space between the text and the profile image */
 }
 
 .heading, #one {
-  text-align: center; /* Center text */
+  text-align: left;
   line-height: normal;
   font-size: 40px;
   margin: 0;
