@@ -36,9 +36,10 @@ header {
   margin-top: -25px;
   text-align-last: right;
   word-spacing: 30px;
-  margin-left: auto;
+  margin-left:20px;
   justify-content: flex-end;
-  margin: 10px 20px 10px 0; 
+  margin: 10px 0; 
+  flex:-1;
 }
 
 header nav a {
