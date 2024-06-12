@@ -36,9 +36,9 @@ header {
   margin-top: -25px;
   text-align-last: right;
   word-spacing: 30px;
-  margin-left: auto; /* updated */
+  margin-left: auto;
   justify-content: flex-end;
-  margin: 10px 20px 10px 0; /* updated */
+  margin: 10px 20px 10px 0; 
 }
 
 header nav a {
@@ -103,28 +103,7 @@ header nav a:active {
   }
 }
 
-/* rest of the CSS remains unchanged */
-@media (max-width: 768px) {
-  #navbar {
-      display: none;
-      flex-direction: column;
-      background-color: deeppink;
-      position: absolute;
-      top: 50px;
-      right: 0;
-      width: 100%;
-  }
-
-  #navbar a {
-      margin: 10px 0;
-      text-align: center;
-  }
-
-  #hamburger {
-      display: block;
-  }
-}
-@media only screen and(max-width:800px){
+@media only screen and (max-width:800px){
   /*for tablets:*/
   #navbar,#About,#Education,#Home,#Contact,#skills{
     width:80%;
@@ -132,10 +111,34 @@ padding:0;
 width:100%;
   }
 }
+#navbar {
+  display: none;
+  flex-direction: column;
+  background-color: deeppink;
+  position: absolute;
+  top: 50px;
+  right: 0;
+  width: 100%;
+}
+
+#navbar a {
+  margin: 10px 0;
+  text-align: center;
+}
+
+#hamburger {
+  display: block;
+}
 @media only screen and (max-width:500px){
   /*for mobile phones*/
   section{
     width: 100%;
+  }
+
+}
+@media only  screen and (max-width:500px){
+  #section{
+    text-align: center;
   }
 }
 /*home section*/
@@ -173,9 +176,15 @@ width:100%;
 }
 /* About section */
 .text-content{
-margin-left: 450px;
-margin-top:-250px;
+width:30px;
 }
+.introdue-heading{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
 section#About {
   height: 150vh;
   width: 100vw;
@@ -344,7 +353,7 @@ height: 50px;
     height: 200px;
     width: 200px;
     border-radius: 100px;
-    }
+  }
 }
 /*contact section*/
 #Contact{
@@ -415,49 +424,4 @@ width: 70px;
 height: 30px;
 margin-left:770px ;
 color: white;
-}
-@media (max-width: 800px) {
-  #navbar, #About, #Education, #Home, #Contact, #Skills {
-    width: 100%;
-    padding: 0;
-  }
-}
-
-@media (max-width: 500px) {
-  section {
-    width: 100%;
-  }
-}
-
-@media (min-width: 768px) {
-  section#About {
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: center;
-    text-align: left;
-  }
-
-  section#About img#prof {
-    margin-right: 40px;
-    margin-bottom: 0;
-  }
-
-  section#About .text-content {
-    max-width: 600px;
-  }
-}
-
-@media (min-width: 600px) {
-  section#About {
-    padding: 40px;
-  }
-
-  section#About img#prof {
-    width: 200px;
-    height: 200px;
-  }
-
-  button#resume {
-    font-size: 18px;
-  }
 }
