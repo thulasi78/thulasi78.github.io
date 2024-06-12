@@ -176,20 +176,18 @@ width:100%;
   width: 150px;
   border-radius: 50%; /* Ensures the image is circular */
   margin-top: 20px; /* Add space between text and image */
-  margin-right: 0; /* Remove right margin for mobile view */
-  align-self: center; /* Center image horizontally in mobile view */
+  margin-right: 20px; /* Space between image and text */
 }
 
-@media only screen and (min-width: 769px) {
+@media only screen and (max-width: 768px) {
   .section {
-    flex-direction: row; /* Use row direction for desktop and laptop view */
+    flex-direction: row; /* Use row direction for mobile view */
     align-items: center; /* Center items vertically in row */
   }
 
   #profile {
-    margin-top: 0; /* Remove top margin for row layout */
-    margin-right: 20px; /* Space between image and text */
-    align-self: unset; /* Reset alignment for desktop and laptop view */
+    margin-top: 0; /* Remove top margin for mobile view */
+    margin-right: 10px; /* Space between image and text */
   }
 }
 /* Media queries for mobile view */
