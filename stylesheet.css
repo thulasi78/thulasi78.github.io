@@ -137,29 +137,26 @@ width:100%;
 
 }
 /*home section*/
-
-
-
-
-
 #Home {
   height: 100vh;
   width: 100vw;
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: column; /* Add this for mobile view */
+  text-align: center; /* Center text alignment */
+  padding: 20px; /* Add padding to avoid text cutting off */
 }
 
 .section {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  text-align: center; /* Center text on mobile */
-  margin-right: 0; /* Remove margin for mobile view */
+  align-items: center; /* Center the content */
+  margin: 0;
 }
 
 .heading, #one {
+  text-align: center; /* Center text */
   line-height: normal;
   font-size: 40px;
   margin: 0;
@@ -171,12 +168,10 @@ width:100%;
 }
 
 #profile {
-  height: 150px;
-  width: 150px;
+  height: 300px;
+  width: 300px;
   border-radius: 50%; /* Ensures the image is circular */
-  margin-top: 20px; /* Add space between text and image */
 }
-
 
 /* Media queries for mobile view */
 @media only screen and (max-width: 768px) {
