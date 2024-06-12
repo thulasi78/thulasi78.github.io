@@ -152,7 +152,6 @@ width:100%;
   justify-content: center;
   text-align: center; /* Center text on mobile */
   margin-right: 0; /* Remove margin for mobile view */
-  align-items:center;
 }
 
 .heading, #one {
@@ -162,7 +161,6 @@ width:100%;
 }
 
 #one {
-  text-align:center;
   color: deeppink;
   margin-top: 20px; /* Space between heading and one */
 }
