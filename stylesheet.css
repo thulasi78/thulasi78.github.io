@@ -150,7 +150,7 @@ width:100%;
   flex-direction: column;
   justify-content: center;
   /*margin-right: 180px;*/ 
-   justify-content: space-between;
+   justify-content: space-around;
   align-items:center;
 }
 
@@ -171,13 +171,6 @@ width:100%;
   width: 300px;
   border-radius: 50%; 
   justify-content: center;
-}
-#section{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  width:50%;
 }
 /* About section */
 .text-content{
