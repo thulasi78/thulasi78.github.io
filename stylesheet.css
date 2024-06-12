@@ -170,6 +170,12 @@ width:100%;
   border-radius: 50%; 
   justify-content: center;
 }
+#section{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
 /* About section */
 .text-content{
 width:30px;
