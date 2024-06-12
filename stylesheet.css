@@ -136,11 +136,6 @@ width:100%;
   }
 
 }
-@media only  screen and (max-width:500px){
-  #section{
-    text-align: center;
-  }
-}
 /*home section*/
 #Home {
   height: 100vh;
