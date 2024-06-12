@@ -155,18 +155,12 @@ width:100%;
 }
 
 .heading, #one {
-    display: flex;
-  flex-direction: column;
-  justify-content: center;
   line-height: normal;
   font-size: 40px;
   margin: 0;
 }
 
 #one {
-    display: flex;
-  flex-direction: column;
-  justify-content: center;
   color: deeppink;
   margin-top: 20px; /* Space between heading and one */
 }
@@ -206,7 +200,7 @@ width:100%;
 
   #profile {
     margin-right: 40px; /* Space between image and text */
-    margin-bottom: 0; /* Remove bottom margin for row layout */
+   /* margin-bottom: 0; *//* Remove bottom margin for row layout */
   }
 }
 
