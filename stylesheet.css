@@ -143,17 +143,18 @@ width:100%;
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column; /* Add this for mobile view */
 }
 
 .section {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-right: 180px; /* Space between the text and the profile image */
+  text-align: center; /* Center text on mobile */
+  margin-right: 0; /* Remove margin for mobile view */
 }
 
 .heading, #one {
-  text-align: left;
   line-height: normal;
   font-size: 40px;
   margin: 0;
@@ -165,10 +166,12 @@ width:100%;
 }
 
 #profile {
-  height: 300px;
-  width: 300px;
+  height: 150px;
+  width: 150px;
   border-radius: 50%; /* Ensures the image is circular */
+  margin-top: 20px; /* Add space between text and image */
 }
+
 
 /* Media queries for mobile view */
 @media only screen and (max-width: 768px) {
