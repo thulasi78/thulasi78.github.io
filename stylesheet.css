@@ -173,6 +173,21 @@ width:100%;
   border-radius: 50%; 
   justify-content: center;
 }
+/* Media queries for mobile view */
+@media (min-width: 768px) {
+  #Home {
+    flex-direction: row;
+  }
+  .section {
+    text-align: left;
+    margin-right: 180px;
+  }
+  #profile {
+    height: 300px;
+    width: 300px;
+    margin-top: 0; /* Remove extra margin on larger screens */
+  }
+}
 /* About section */
 .text-content{
 width:30px;
