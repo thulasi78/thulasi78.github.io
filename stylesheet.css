@@ -155,12 +155,18 @@ width:100%;
 }
 
 .heading, #one {
+    display: flex;
+  flex-direction: column;
+  justify-content: center;
   line-height: normal;
   font-size: 40px;
   margin: 0;
 }
 
 #one {
+    display: flex;
+  flex-direction: column;
+  justify-content: center;
   color: deeppink;
   margin-top: 20px; /* Space between heading and one */
 }
