@@ -174,20 +174,23 @@ width:100%;
   justify-content: center;
 }
 /* Media queries for mobile view */
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
   #Home {
-    height: auto;
-    padding: 20px; 
+    flex-direction: column; /* Use column direction for mobile view */
+    padding: 10px; /* Adjust padding for mobile view */
+  }
+
+  .section {
+    margin-right: 0; /* Remove right margin */
   }
 
   .heading, #one {
-    font-size: 24px; 
-    text-align:center;
+    font-size: 30px; /* Adjust font size for mobile view */
   }
 
   #profile {
-    height: 150px;
-    width: 150px; 
+    height: 200px; /* Adjust image size for mobile view */
+    width: 200px;
   }
 }
 /* About section */
