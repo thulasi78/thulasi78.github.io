@@ -193,6 +193,17 @@ width:100%;
     width: 200px;
   }
 }
+@media only screen and (min-width: 769px) {
+  .section {
+    flex-direction: row; /* Use row direction for desktop and laptop view */
+  }
+
+  #profile {
+    margin-right: 40px; /* Space between image and text */
+    margin-bottom: 0; /* Remove bottom margin for row layout */
+  }
+}
+
 /* About section */
 .text-content{
 width:30px;
