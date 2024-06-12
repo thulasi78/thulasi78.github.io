@@ -161,13 +161,14 @@ width:100%;
 
 #one {
   color: deeppink;
-  margin-top: 20px; /* Space between heading and one */
+  margin-top: 20px; 
 }
 
 #profile {
   height: 300px;
   width: 300px;
-  border-radius: 50%; /* Ensures the image is circular */
+  border-radius: 50%; 
+  justify-content: center;
 }
 /* About section */
 .text-content{
