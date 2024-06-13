@@ -1,11 +1,10 @@
-/total/
+/* General styles */
 body {
   background-color: black;
   color: white;
   scroll-behavior: smooth;
 }
 
-/* navbar */
 header {
   position: fixed;
   top: 0;
@@ -48,7 +47,6 @@ header nav a:active {
   cursor: pointer;
 }
 
-/* Hide hamburger menu for desktop */
 .burger,
 #hamburger {
   display: none;
